@@ -21,6 +21,7 @@ Tic-Tac-Toe is an adversarial environment. Adversarial environment refers to a c
 Hence, this game belongs to a class of adversarial search problems where our aim is to find a way (solution) to maximize our score in the presence of an adversary who is planning against us. In particular, Tic-Tac-Toe is a two player environment. It follows turn taking which means actions of a player are taken one followed by the other. Moreover, this game is a zero sum game, meaning, the sum of the utilities (scores) of the players at the end of the game is constant for every game.
 <br>
 
+![ss](https://raw.githubusercontent.com/fabiokrone/images/blob/main/game.png)
 
 # The Random Decision Algorithm
 The random decision making algorithm is very straightforward and simple. At each of its turns, the bot calculates all the valid moves in the current state and chooses one of these valid actions in random. This strategy is clearly not optimal. However, we would like to use this algorithm and compare its moves with those of the minimax algorithm.
