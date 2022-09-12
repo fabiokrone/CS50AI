@@ -21,44 +21,6 @@ Tic-Tac-Toe is an adversarial environment. Adversarial environment refers to a c
 Hence, this game belongs to a class of adversarial search problems where our aim is to find a way (solution) to maximize our score in the presence of an adversary who is planning against us. In particular, Tic-Tac-Toe is a two player environment. It follows turn taking which means actions of a player are taken one followed by the other. Moreover, this game is a zero sum game, meaning, the sum of the utilities (scores) of the players at the end of the game is constant for every game.
 <br>
 
-# Let's Formally Define The Game!
-We define the game to be a formal search problem with the following elements.
-<br>
-<h4> •	S <sub>O</sub> </h4>
-<br>
-The initial state, which specifies how the game is setup at start.In Tic-Tac-Toe, this represents a 3x3 board with all the cells empty.
-<br>
-
-<h4>•	PLAYER ( s ) </h4>
-<br>
-Defines which player has the move in the given state s.
-<br>
-
-<h4>•	ACTIONS ( s ) </h4>
-<br>
-Returns the set of legal moves in the state s.
-<br>
-
-<h4>•	RESULT ( s , a ) </h4>
-<br>
-Also known as the transitional model, returns the resulting state s’ on selecting move a in the state s.
-<br>
-
-<h4>•	TERMINAL-TEST ( s ) </h4>
-<br>
-Returns true, when the game is over and false otherwise.
-<br>
-
-<h4>•	UTILITY ( s , p ) </h4>
-<br>
-Returns the utility / score of player p in the terminal state s.   In Tic-Tac-Toe, the possible utility values are 0 (draw), +1 (win) and -1 (lose).
-<br>
-
-# Game Tree
-The initial state, ACTIONS(s) and RESULT(s,a) together define the game tree with the initial state as the root of the tree. We use the term search tree to describe a tree that is superimposed on the game tree and examines enough nodes to determine what move to make. Following figure shows a partial game tree.
-<br><br>
-<img src = './game-tree.jpg'/>
-<br>
 
 # The Random Decision Algorithm
 The random decision making algorithm is very straightforward and simple. At each of its turns, the bot calculates all the valid moves in the current state and chooses one of these valid actions in random. This strategy is clearly not optimal. However, we would like to use this algorithm and compare its moves with those of the minimax algorithm.
