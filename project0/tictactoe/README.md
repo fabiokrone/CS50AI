@@ -15,8 +15,7 @@ Each player takes turns, first X, and then O. The goal is to get three in a row 
 <br>
 
 # Game in Numbers
-So, how many Tic-Tac-Toe games are possible? This is a simple question solvable with a little brute force and basic combinatory techniques. It is quite obvious that the answer is towards the south of 9!. Total number of possible games is equal to the sum of the number of games that end on the 5th move, 6th move, 7th move, 8th move and the 9th move. A brief calculation of this sum results in 255,168. These calculations do not take symmetry of the board into consideration. It is also interesting to note that most games end in a draw (always, if both players play optimally).
-<br>
+So, how many Tic-Tac-Toe games are possible? This is a simple question solvable with a little brute force and basic combinatory techniques. It's pretty obvious that the answer is around the factorial of 9!. The total number of possible games is equal to the sum of the number of games that end on the 5th toss, 6th tosses, 7th toss, 8th toss and 9th toss. A brief calculation of this sum results in 255,168. These calculations do not take into account the symmetry of the plate. It is also interesting to note that most games end in a tie (always, if both players play optimally).
 
 # Game Environment
 Tic-Tac-Toe is an adversarial environment. Adversarial environment refers to a competitive environment where each player’s goal is to minimize the opponent’s score and thereby maximize their own score. 
@@ -28,7 +27,7 @@ Hence, this game belongs to a class of adversarial search problems where our aim
 
 
 # The Minimax Algorithm
-Let us call the two players MAX and MIN, for reasons that will soon become obvious. MAX wants to find a sequence of actions leading to a win, but MIN has something to say about it. This means that MAX’s strategy must be a conditional plan—a contingent strategy specifying a response to each of MIN’s possible moves. In games that have a binary outcome (win or lose), we could use AND–OR search (page 125) to generate the conditional plan. Infact, for such games, the definition of a winning strategy for the game is identical to thedefinition of a solution for a nondeterministic planning problem: in both cases the desirableoutcome must be guaranteed no matter what the “other side” does. For games with multiple outcome scores, we need a slightly more general algorithm called minimax search.
+Let us call the two players MAX and MIN, for reasons that will soon become obvious. "MAX wants to find a sequence of actions leading to a win, but MIN has something to say about it. This means that MAX’s strategy must be a conditional plan—a contingent strategy specifying a response to each of MIN’s possible moves. In games that have a binary outcome (win or lose), we could use AND–OR search (page 125) to generate the conditional plan. Infact, for such games, the definition of a winning strategy for the game is identical to thedefinition of a solution for a nondeterministic planning problem: in both cases the desirableoutcome must be guaranteed no matter what the “other side” does. For games with multiple outcome scores, we need a slightly more general algorithm called minimax search." (Russel and Norvig)
 
 
 # References
