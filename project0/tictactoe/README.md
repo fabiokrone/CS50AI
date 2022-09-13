@@ -3,9 +3,9 @@ author : fabiokrone<br>
 mail-id : fabiokrone10@gmail.com<br>
 project0 - Tic-Tac-Toe
 
-#Activity: 
+# Activity: 
 Using Minimax, implement an AI to play Tic-Tac-Toe optimally.
-
+<br>
 # Introduction
 Tic-Tac-Toe is a two player game, X and O, who take turns marking the spaces in a 3x3 grid. Each player takes turns, first X, and then O. The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row first wins the game. The game always ends with a win-lose or a draw situation. 
 <br>
@@ -25,12 +25,10 @@ Hence, this game belongs to a class of adversarial search problems where our aim
 <br>
 
 ![logo](https://github.com/fabiokrone/images/blob/main/game.png)
-# The Random Decision Algorithm
-The random decision making algorithm is very straightforward and simple. At each of its turns, the bot calculates all the valid moves in the current state and chooses one of these valid actions in random. This strategy is clearly not optimal. However, we would like to use this algorithm and compare its moves with those of the minimax algorithm.
-<br>
+
 
 # The Minimax Algorithm
-Let us call the two players MAX and MIN, for reasons that will soon become obvious. MAX wants to find a sequence of actions leading to a win, but MIN has something to say about it. This means that MAX’s strategy must be a conditional plan—a contingent strategy specifying a response to each of MIN’s possible moves. In games that have a binary outcome (win or lose), we could use AND–OR search (page 125) to generate the conditional plan. Infact, for such games, the definition of a winning strategy for the game is identical to thedefinition of a solution for a nondeterministic planning problem: in both cases the desirableoutcome must be guaranteed no matter what the “other side” does. For games with multipleoutcome scores, we need a slightly more general algorithm called minimax search.
+Let us call the two players MAX and MIN, for reasons that will soon become obvious. MAX wants to find a sequence of actions leading to a win, but MIN has something to say about it. This means that MAX’s strategy must be a conditional plan—a contingent strategy specifying a response to each of MIN’s possible moves. In games that have a binary outcome (win or lose), we could use AND–OR search (page 125) to generate the conditional plan. Infact, for such games, the definition of a winning strategy for the game is identical to thedefinition of a solution for a nondeterministic planning problem: in both cases the desirableoutcome must be guaranteed no matter what the “other side” does. For games with multiple outcome scores, we need a slightly more general algorithm called minimax search.
 
 
 # References
